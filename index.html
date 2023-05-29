@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <div class="text">
+      <h1 class="text1">Kalkulator Matematika</h1>
+      <h1>Luas dan keliling</h1>
+      <h1>Persegi dan Persegi Panjang</h1>
+    </div>
+    <div class="calculator">
+      <h2>Silakan pilih kalkulator</h2>
+      <div class="tab">
+        <button
+          class="tablinks"
+          onclick="openCity(event, 'persegi')"
+          id="defaultOpen"
+        >
+          Persegi
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'persegi-panjang')">
+          Persegi Panjang
+        </button>
+      </div>
+
+      <div id="persegi" class="tabcontent">
+        <form id="hitungPersegi">
+          <label for="inputPersegi">Sisi persegi</label>
+          <input
+            type="text"
+            id="inputPersegi"
+            name="inputPersegi"
+            placeholder="Masukan sisi persegi"
+          />
+          <p id="luas"></p>
+          <input type="submit" value="Hitung Luas" onclick="luasPersegi(event)"/>
+          <input type="submit" value="Hitung Keliling" onclick="kelilingPersegi(event)"/>
+          <button type="submit" class="small-button" onclick="resetPersegi(event)">reset</button>
+        </form>
+      </div>
+
+      <div id="persegi-panjang" class="tabcontent">
+        <form id="hitungPersegiPanjang">
+          <label for="inputPanjang">Panjang</label>
+          <input
+            type="text"
+            id="inputPanjang"
+            name="inputPanjang"
+            placeholder="Masukan panjang sisi"
+          />
+          <label for="inputLebar">Lebar</label>
+          <input
+            type="text"
+            id="inputLebar"
+            name="inputLebar"
+            placeholder="Masukan lebar sisi"
+          />
+          <p id="luas1"></p>
+          <input type="submit" value="Hitung Luas" onclick="luasPersegiPanjang(event)"/>
+          <input type="submit" value="Hitung Keliling" onclick="kelilingPersegiPanjang(event)"/>
+          <button type="submit" class="small-button" onclick="resetPersegiPanjang(event)">reset</button>
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

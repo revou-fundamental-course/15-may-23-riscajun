@@ -1,0 +1,129 @@
+body {
+  background-color: rgb(61, 61, 61);
+}
+
+div.text {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+h1.text1 {
+  color: rgb(255, 1, 149);
+}
+
+div.calculator {
+  margin: auto;
+  width: 350px;
+  height: 480px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.804);
+  border-radius: 20px;
+  position: absolute;
+  top: 5%;
+  left: 15%;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  text-align: center;
+}
+
+/* Style the tab */
+.tab {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 40.75px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: rgb(232, 0, 136);
+  color: white;
+  padding: 9px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(206, 0, 120);
+}
+
+input[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 4px #888;
+  }
+
+label {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+form {
+  margin-top: 5%;
+}
+
+.small-button {
+  float: right;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: none;
+  background-color: #e88c02;
+  color: white;
+  border-radius: 4px;
+}
+
+.small-button:hover {
+  background-color: #c77802;
+}
+
+.small-button:focus {
+  outline: none;
+  box-shadow: 0 0 4px #888;
+}
